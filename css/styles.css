@@ -109,6 +109,10 @@ header {
 	grid-template-columns: 100%;
 	}
 }
+
+h4 {
+    text-align: center;
+}
 /**********Portfolio css ends**********/
 
 footer, h3 {
