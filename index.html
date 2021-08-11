@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--external css-->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <div class="wrapper">
         <header>
+            <!--navbar links begins-->
             <nav id="home">
                 <a href="#home">Home</a> |
                 <a href="#about">About</a> |
                 <a href="#portfolio">Portfolio</a> |
                 <a href="#contact">Contact</a> 
             </nav>
+            <!--navbar ends-->
         </header>
         <main>
+            <!--profile intro begins-->
             <div class="container">
                 <div class="intro">
                     <img class="profile-picture" src="./image/profile-picture.jpg" alt="profile-image" title="A profile image of author"/>
@@ -27,7 +32,7 @@
                         <em>{{{ Never stop learning }}}</em>
                     </p>	
                 </div>
-                
+                <!--profile intro ends-->
             <hr/>
 
             <br>
@@ -47,44 +52,104 @@
 
                 <br>
 
+                <!--about/ article ends-->
                 <div id="about">
                     <h3>About</h3>
                 </div>
 
                 <article>
                     <div class="col-3">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor unde nobis assumenda provident, beatae eligendi maiores eos consequuntur facere ullam pariatur est itaque ea? Fuga vero earum autem placeat tempora!
+                    <b><em>Lorem ipsum dolor sit</em></b>, amet consectetur adipisicing elit. Dolor unde nobis assumenda provident, beatae eligendi maiores eos consequuntur facere ullam pariatur est itaque ea? Fuga vero earum autem placeat tempora!
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quas sint perferendis hic, corporis laboriosam alias porro in a repellendus commodi quae dignissimos asperiores dolore, ad, cum doloribus impedit molestias? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi distinctio, iusto impedit adipisci odit quasi pariatur amet aspernatur ipsa nemo vel obcaecati sint dolor, officia saepe omnis optio, id sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque inventore aperiam architecto dignissimos. Laudantium facere, tenetur sequi tempora sit quae aperiam magnam nostrum, perspiciatis numquam labore, sapiente nulla asperiores iure.
                     </div>
                 </article>
+                <!--about/article ends-->
             
                 <br><br>
 
             </section>
 
             <hr/>
-
+<!--my portfolio begins here-->
             <section>
                 <div id="portfolio">
                     <h3>My Portfolio</h3>
                 </div>
+                <div class="projects-grid"> 
+                    <div class="project-image-wrapper">
+                        <a href="https://pixabay.com/images/search/amsterdam/" target="_blank"><img class="project-image" src="./image/alley-7.jpg" alt="alley way" title="An alley way" height="300px"></a>
+                        <h4>Project 1- Amsterdam</h4>
+                    </div>
+                <div class="project-image-wrapper">
+                    <a href="https://pixabay.com/images/search/Japan/" target="_blank"><img class="project-image" src="./image/japan-8.jpg" alt="Alley in Japan" title="Japan alleyway" height="300px"></a>
+                        <h4>Project 2- Japan</h4>
+                    </div>
+                <div class="project-image-wrapper">
+                    <a href="https://pixabay.com/images/search/london/" target="_blank"><img class="project-image" src="./image/london-9.jpg" alt="Bridge in London" title="London travel" height="300px"></a>
+                        <h4>Project 3- London</h4>
+                    </div>
+                <div class="project-image-wrapper">
+                    <a href="https://pixabay.com/images/search/hongkong/" target="_blank"><img class="project-image" src="./image/clouds-HK.jpg" alt="Hongkong night lights" title="Night lights Hongkong" title="Hongkong night lights" height="300px"></a>
+                        <h4>Project 4- Hongkong</h4>
+                    </div>
+            </div>
             </section>
-
+            <!--portfolio ends here-->
         </main>
 
         <!--<aside>aside</aside>-->
-        <br>
+
         <hr/>
+        <Section class="links-contact">
+            <!--social media links begins-->
+            <div class="links">
+				<h3>Links</h3>
+				<ul>
+					<li>
+						<a href="https://www.github.com/<user>">Github</a>
+					</li>
+					<li>
+						<a href="https://www.twitter.com/<user>">Twitter</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/<user>">LinkedIn</a>
+					</li>
+				</ul>
+			</div>
+            <!--social media links ends-->
+
+<!--form field begins-->
         <contact id="contact">
             <h3>Contact Form</h3>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_email">
+                </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                </li>
+            </ul>
+            </form>
         </contact>
+        <!--form field ends-->
+        </Section>
+        
             
 
-<br><br>
+<br>
+<!--footer copyright begins-->
 <footer>
     <div>Design with love &hearts; by JJ ~ Copyright &copy; 2021</div>
         </footer>
     </div>
+    <!--footer copyright ends-->
 </body>
 </html>
 
