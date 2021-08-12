@@ -53,6 +53,7 @@ header {
     border-radius: 50%;
     width: 20%;
     /*opacity: 0.9;*/
+    box-shadow: 0 0 2px 1px rgba(0, 139, 186, 0.719)
 }
 
 /******camera css begins*****/
