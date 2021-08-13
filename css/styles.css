@@ -107,12 +107,6 @@ header {
 	box-shadow: 0 8px 12px 0 rgb(34, 60, 80, 0.16);
 }
 
-@media (max-width: 650px) {
-	.projects-grid {
-	grid-template-columns: 100%;
-	}
-}
-
 h4 {
     text-align: center;
 }
@@ -138,8 +132,6 @@ hr { /*horizontal rule css*/
 a {
     color: rgba(0, 0, 255, 0.664);
 }
-
-
 
 /*****form css begins*****/
 form {
@@ -207,44 +199,14 @@ button {
 
 /*****media queries begins*****/
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-width: 650px) {
+	.projects-grid {
+	grid-template-columns: 100%;
+	}
 }
 
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3) {
-
-}
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-and (min-device-width: 1200px) 
-and (max-device-width: 1600px) 
-and (-webkit-min-device-pixel-ratio: 1) { 
-}
-
-/* ----------- Retina Screens ----------- */
-@media screen 
-and (min-device-width: 1200px) 
-and (max-device-width: 1600px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (min-resolution: 192dpi) { 
+@media only screen and (max-width: 1024px) {
+	.projects-grid {
+	grid-template-columns: 50%;
+	}
 }
