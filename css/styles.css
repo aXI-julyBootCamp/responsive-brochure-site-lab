@@ -151,6 +151,7 @@ ul {
 }
 
 form li + li {
+    /*makes space between labels*/
     margin-top: 1em;
 }
 
@@ -165,7 +166,7 @@ input,textarea {
     /* To make sure that all text fields have the same font settings By default, textareas have a monospace font */
     font: 1em sans-serif;
 
-    /* Uniform text field size */
+    /* makes text field Uniform*/
     width: 300px;
     /*box-sizing: border-box;*/
 
@@ -173,35 +174,29 @@ input,textarea {
     border: 2px solid #999;
 }
 
-input:focus,textarea:focus {
-    /* Additional highlight for focused elements */
-    border-color: #000;
-}
-
 textarea {
-    /* Align multiline text fields with their labels */
+    /* aligh text fields with their labels */
     vertical-align: top;
 
-    /* Provide space to type some text */
+    /* textarea box space*/
     height: 5em;
 }
 
 .button {
-    /* Align buttons with the text fields */
+    /* align buttons with the text fields */
     padding-left: 90px; 
-    /* same size as the label elements */
 }
 
 button {
-    /* This extra margin represent roughly the same space as the space between the labels and their text fields */
+    /* aligns with text field */
     margin-left: .5em;
 }
 
 /*****media queries begins*****/
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 480px) {
 	.projects-grid {
-	grid-template-columns: 100%;
+	grid-template-columns: 50%;
 	}
 }
 
