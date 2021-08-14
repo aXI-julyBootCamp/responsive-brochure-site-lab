@@ -194,12 +194,20 @@ button {
 
 /*****media queries begins*****/
 
+/*mobile devices*/
 @media only screen and (max-width: 480px) {
 	.projects-grid {
-	grid-template-columns: 50%;
+	grid-template-columns: 100%;
 	}
 }
 
+@media only screen and (max-width: 768px) {
+	.projects-grid {
+	grid-template-columns: 100%;
+	}
+}
+
+/*small screens-laptops*/
 @media only screen and (max-width: 1024px) {
 	.projects-grid {
 	grid-template-columns: 100%;
