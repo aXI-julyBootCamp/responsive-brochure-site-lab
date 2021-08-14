@@ -201,11 +201,12 @@ button {
 	}
 }
 
+/*tablet
 @media only screen and (max-width: 768px) {
 	.projects-grid {
 	grid-template-columns: 100%;
 	}
-}
+}*/
 
 /*small screens-laptops*/
 @media only screen and (max-width: 1024px) {
